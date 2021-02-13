@@ -19,7 +19,7 @@ namespace _3_classes
 
         public Games()
         {
-            Console.WriteLine( "Games Created" );
+            Console.WriteLine("Games Created" );
         }
 
     }

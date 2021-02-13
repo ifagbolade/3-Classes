@@ -12,16 +12,14 @@ namespace _3_classes
         {
             /* 
             Create a project that will deals with sports (football)
-            Classes could include coaches and shows the name 
-            Games played, like the schdule opponets
-            Locations could be the statidum name, cities 
-            May be weathers 
+            Have a Coach created that would play three games in a certain location and the football will start 
+            Classes could include: coaches, games and location 
              */
             Coaches MikeTomlin = new Coaches();
             MikeTomlin.Name = "MikeTomlin";
             Games g1 = new Games();
             g1.Coaches = MikeTomlin;
-            g1.Scorepoint = 60;  
+            g1.Scorepoint = 60;
             g1.GamesPlayed = "Aginst Browns ";
 
             Games g2 = new Games();
@@ -68,11 +66,31 @@ namespace _3_classes
             pcs.thisLocationArea = LocationArea.cloudy;
             // ... 
 
-          Startup myStartup = new Startup();
+            Startup myStartup = new Startup();
             myStartup.LocationList.Add(pc);
             myStartup.LocationList.Add(pcs);
             Console.ReadLine();
+        }
 
+         
+
+            // Add soomething new to make it even more creative and then you are done
+            // reupload it on github 
+
+        class Startup
+        {
+            public List<Coaches> CoachesList;
+            public List<Games> GamesList;
+            public List<Location> LocationList;
+
+
+            public Startup()
+            {
+                Console.WriteLine("Football started.");
+                LocationList = new List<Location>();
+
+
+            }
 
 
         }

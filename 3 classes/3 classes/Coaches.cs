@@ -10,10 +10,17 @@ namespace _3_classes
     {
         private string _name;
         public string Name { get => _name; set => _name = value; }
+        /*
+        public List<Coaches> CoachesList;
+        public List<Games> GamesList;
+        public List<Location> LocationList; */ 
 
         public Coaches()
         {
-            Console.WriteLine( " Coaches Created" );
+            Console.WriteLine("Coaches Created" );
+
+           // Console.WriteLine("Location started.");
+           // LocationList = new List<Location>();
         }
 
     }
