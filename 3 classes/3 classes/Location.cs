@@ -29,7 +29,7 @@ namespace _3_classes
         public LocationArea thisLocationArea;
         public StadiumLook thistadiumLook;
         public Coaches thiscoaches;
-        public DateTime DesignDate; // ? date 
+        public DateTime DesignDate; 
         public List<Coaches> CoachesGethired;
         public Location ()
         {

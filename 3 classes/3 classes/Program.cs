@@ -11,25 +11,26 @@ namespace _3_classes
         static void Main(string[] args)
         {
             /* 
-            Create a project that will deals with sports (football)
-            Have a Coach created that would play three games in a certain location and the football will start 
+            Create a project that will deals with sports (NFL Football)
+            Have a Coach created that would play three games 
+            in a certain location and the football will start 
             Classes could include: coaches, games and location 
              */
             Coaches MikeTomlin = new Coaches();
             MikeTomlin.Name = "MikeTomlin";
             Games g1 = new Games();
             g1.Coaches = MikeTomlin;
-            g1.Scorepoint = 60;
+            g1.Scorepoint = 27;
             g1.GamesPlayed = "Aginst Browns ";
 
             Games g2 = new Games();
             g2.Coaches = MikeTomlin;
-            g2.Scorepoint = 20;
+            g2.Scorepoint = 14;
             g2.GamesPlayed = "Aganist Ravens";
 
             Games g3 = new Games();
             g3.Coaches = MikeTomlin;
-            g3.Scorepoint = 35;
+            g3.Scorepoint = 21;
             g3.GamesPlayed = "Aganist Colt";
 
             Location pc = new Location();
@@ -38,7 +39,6 @@ namespace _3_classes
             pc.thiscoaches = MikeTomlin;
             pc.thistadiumLook = StadiumLook.flatfield;
             pc.thisLocationArea = LocationArea.snow;
-            // ... 
 
             // new coaches 
             Coaches AndyReid = new Coaches();
@@ -50,12 +50,12 @@ namespace _3_classes
 
             Games gp2 = new Games();
             gp2.Coaches = AndyReid;
-            gp2.Scorepoint = 50;
+            gp2.Scorepoint = 27;
             gp2.GamesPlayed = "Aganist Rams";
 
             Games gp3 = new Games();
             gp3.Coaches = AndyReid;
-            gp3.Scorepoint = 35;
+            gp3.Scorepoint = 14;
             gp3.GamesPlayed = "Aganist Packers";
 
             Location pcs = new Location();
@@ -64,35 +64,28 @@ namespace _3_classes
             pcs.thiscoaches = AndyReid;
             pcs.thistadiumLook = StadiumLook.Bowl;
             pcs.thisLocationArea = LocationArea.cloudy;
-            // ... 
 
+            // To Run the Program 
             Startup myStartup = new Startup();
             myStartup.LocationList.Add(pc);
             myStartup.LocationList.Add(pcs);
             Console.ReadLine();
+
+            Console.WriteLine("PITTSBURGH VS CHIEF");
+            Console.WriteLine("ENJOY THE GAME");
+            Console.ReadLine();
         }
-
-         
-
-            // Add soomething new to make it even more creative and then you are done
-            // reupload it on github 
-
         class Startup
         {
             public List<Coaches> CoachesList;
             public List<Games> GamesList;
             public List<Location> LocationList;
 
-
             public Startup()
             {
                 Console.WriteLine("Football started.");
                 LocationList = new List<Location>();
-
-
             }
-
-
         }
     }
 }
